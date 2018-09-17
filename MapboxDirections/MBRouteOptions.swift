@@ -259,3 +259,47 @@ open class RouteOptionsV4: RouteOptions {
     }
 }
 
+
+
+/**
+ A `RouteOptionsV1` object is a structure that specifies the criteria for results returned by the Mapbox Directions API v4.
+
+ Pass an instance of this class into the `Directions.calculate(_:completionHandler:)` method.
+ */
+@objc(MBRouteOptionsV1)
+open class RouteOptionsV1: RouteOptions {
+    // MARK: Specifying the Response Format
+
+    /**
+     The format of the returned route steps’ instructions.
+
+     By default, the value of this property is `text`, specifying plain text instructions.
+     */
+    @objc open var instructionFormat: InstructionFormat = .text
+
+    /**
+     A Boolean value indicating whether the returned routes and their route steps should include any geographic coordinate data.
+
+     If the value of this property is `true`, the returned routes and their route steps include coordinates; if the value of this property is `false, they do not.
+
+     The default value of this property is `true`.
+     */
+    @objc open var includesShapes: Bool = true
+
+    override var path: String {
+        assert(!queries.isEmpty, "No query")
+
+        let profileIdentifier = self.profileIdentifier.rawValue.replacingOccurrences(of: "/", with: ".")
+        let queryComponent = queries.joined(separator: ";")
+        return "v1/driving/\(queryComponent).json"
+    }
+
+    override var params: [URLQueryItem] {
+        return [
+            URLQueryItem(name: "annotations", value: String(true)),
+            URLQueryItem(name: "steps", value: String(true)),
+            URLQueryItem(name: "alternatives", value: String(true)),
+            URLQueryItem(name: "overview", value: "full"),
+        ]
+    }
+}

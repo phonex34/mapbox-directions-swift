@@ -260,7 +260,7 @@ open class Directions: NSObject {
         
         var request = URLRequest(url: url)
         request.setValue(userAgent, forHTTPHeaderField: "User-Agent")
-        
+        request.setValue(url.host, forHTTPHeaderField: "Host")
         if let data = data {
             request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
             request.httpMethod = "POST"
@@ -269,7 +269,7 @@ open class Directions: NSObject {
         
         return URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
             var json: JSONDictionary = [:]
-            if let data = data, response?.mimeType == "application/json" {
+            if let data = data {
                 do {
                     json = try JSONSerialization.jsonObject(with: data, options: []) as! JSONDictionary
                 } catch {
@@ -300,13 +300,17 @@ open class Directions: NSObject {
      */
     @objc(URLForCalculatingDirectionsWithOptions:)
     open func url(forCalculating options: DirectionsOptions) -> URL {
-        let params = options.params + [
-            URLQueryItem(name: "access_token", value: accessToken),
-        ]
-        
-        let unparameterizedURL = URL(string: options.path, relativeTo: apiEndpoint)!
+          let unparameterizedURL = URL(string: options.path, relativeTo: apiEndpoint)!
         var components = URLComponents(url: unparameterizedURL, resolvingAgainstBaseURL: true)!
-        components.queryItems = params
+        if (apiEndpoint.absoluteString.contains("mapbox")) {
+            let params = options.params + [
+                URLQueryItem(name: "access_token", value: accessToken),
+            ]
+            components.queryItems = params
+        } else {
+            components.queryItems = options.params
+        }
+   
         return components.url!
     }
     
