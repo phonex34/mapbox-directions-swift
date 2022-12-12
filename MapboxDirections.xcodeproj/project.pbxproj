@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,25 @@
 		35EFD00C207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EFD00A207DFACA00BF3873 /* MBVisualInstruction.swift */; };
 		35EFD00D207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EFD00A207DFACA00BF3873 /* MBVisualInstruction.swift */; };
 		35EFD00E207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EFD00A207DFACA00BF3873 /* MBVisualInstruction.swift */; };
+		3F4A553729445E5200BA4CE9 /* MBRouteEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A553629445E5200BA4CE9 /* MBRouteEvent.swift */; };
+		3F4A553829445E6300BA4CE9 /* MBRouteEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A553629445E5200BA4CE9 /* MBRouteEvent.swift */; };
+		3F4A553929445E6400BA4CE9 /* MBRouteEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A553629445E5200BA4CE9 /* MBRouteEvent.swift */; };
+		3F4A553A29445E6500BA4CE9 /* MBRouteEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A553629445E5200BA4CE9 /* MBRouteEvent.swift */; };
+		3F4A553C2946CD1600BA4CE9 /* MBRouteEventLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A553B2946CD1600BA4CE9 /* MBRouteEventLocation.swift */; };
+		3F4A553D2946CD1600BA4CE9 /* MBRouteEventLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A553B2946CD1600BA4CE9 /* MBRouteEventLocation.swift */; };
+		3F4A553E2946CD1600BA4CE9 /* MBRouteEventLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A553B2946CD1600BA4CE9 /* MBRouteEventLocation.swift */; };
+		3F4A553F2946CD1600BA4CE9 /* MBRouteEventLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4A553B2946CD1600BA4CE9 /* MBRouteEventLocation.swift */; };
+		3F70653D292F33B0007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653C292F33B0007E8974 /* Polyline.xcframework */; };
+		3F70653E292F33B0007E8974 /* Polyline.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653C292F33B0007E8974 /* Polyline.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3F706540292F33CD007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653F292F33CD007E8974 /* Polyline.xcframework */; };
+		3F706541292F33CD007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653F292F33CD007E8974 /* Polyline.xcframework */; };
+		3F706542292F33CD007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653F292F33CD007E8974 /* Polyline.xcframework */; };
+		3F706543292F33CD007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653F292F33CD007E8974 /* Polyline.xcframework */; };
+		3F706544292F33CD007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653F292F33CD007E8974 /* Polyline.xcframework */; };
+		3F706545292F33CD007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653F292F33CD007E8974 /* Polyline.xcframework */; };
+		3F706546292F33CD007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653F292F33CD007E8974 /* Polyline.xcframework */; };
+		3F706547292F33CD007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653F292F33CD007E8974 /* Polyline.xcframework */; };
+		3F706548292F33CD007E8974 /* Polyline.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F70653F292F33CD007E8974 /* Polyline.xcframework */; };
 		8D381B611FD9F5B1008D5A58 /* noDestinationName.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D381B601FD9F5B1008D5A58 /* noDestinationName.json */; };
 		8D381B631FDB01D1008D5A58 /* apiDestinationName.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D381B621FDB01D1008D5A58 /* apiDestinationName.json */; };
 		8D381B641FDB0898008D5A58 /* noDestinationName.json in Resources */ = {isa = PBXBuildFile; fileRef = 8D381B601FD9F5B1008D5A58 /* noDestinationName.json */; };
@@ -214,8 +233,6 @@
 		DAE9E0F41EB7DE2E001E8E8B /* RouteOptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE9E0F31EB7DE2E001E8E8B /* RouteOptionsTests.swift */; };
 		DAE9E0F51EB7DE2E001E8E8B /* RouteOptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE9E0F31EB7DE2E001E8E8B /* RouteOptionsTests.swift */; };
 		DAE9E0F61EB7DE2E001E8E8B /* RouteOptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE9E0F31EB7DE2E001E8E8B /* RouteOptionsTests.swift */; };
-		F448F8311DDCC65C000BC343 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F448F82A1DDCC5B6000BC343 /* Polyline.framework */; };
-		F448F8341DDCC6C1000BC343 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F448F82A1DDCC5B6000BC343 /* Polyline.framework */; };
 		F448F83D1DDCC6FA000BC343 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F448F83A1DDCC6EB000BC343 /* Polyline.framework */; };
 		F448F83E1DDCC6FF000BC343 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F448F8391DDCC6EB000BC343 /* OHHTTPStubs.framework */; };
 		F448F83F1DDCC701000BC343 /* Polyline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F448F83A1DDCC6EB000BC343 /* Polyline.framework */; };
@@ -265,6 +282,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3F70653E292F33B0007E8974 /* Polyline.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +293,10 @@
 		358D48801E2EAB2500F32A65 /* MBRouteOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBRouteOptions.h; sourceTree = "<group>"; };
 		358D48851E2EAB4500F32A65 /* MBRouteOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBRouteOptions.m; sourceTree = "<group>"; };
 		35EFD00A207DFACA00BF3873 /* MBVisualInstruction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBVisualInstruction.swift; sourceTree = "<group>"; };
+		3F4A553629445E5200BA4CE9 /* MBRouteEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRouteEvent.swift; sourceTree = "<group>"; };
+		3F4A553B2946CD1600BA4CE9 /* MBRouteEventLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBRouteEventLocation.swift; sourceTree = "<group>"; };
+		3F70653C292F33B0007E8974 /* Polyline.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Polyline.xcframework; path = Carthage/Build/Polyline.xcframework; sourceTree = "<group>"; };
+		3F70653F292F33CD007E8974 /* Polyline.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Polyline.xcframework; path = Carthage/Build/Polyline.xcframework; sourceTree = "<group>"; };
 		8D381B601FD9F5B1008D5A58 /* noDestinationName.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = noDestinationName.json; sourceTree = "<group>"; };
 		8D381B621FDB01D1008D5A58 /* apiDestinationName.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = apiDestinationName.json; sourceTree = "<group>"; };
 		8D381B691FDB101F008D5A58 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -358,7 +380,6 @@
 		DAE33A1A1F215DF600C06039 /* IntersectionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntersectionTests.swift; sourceTree = "<group>"; };
 		DAE9E0F31EB7DE2E001E8E8B /* RouteOptionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouteOptionsTests.swift; path = MapboxDirectionsTests/RouteOptionsTests.swift; sourceTree = SOURCE_ROOT; };
 		DD6254731AE70CB700017857 /* MBDirections.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBDirections.swift; sourceTree = "<group>"; };
-		F448F82A1DDCC5B6000BC343 /* Polyline.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Polyline.framework; path = Carthage/Build/iOS/Polyline.framework; sourceTree = "<group>"; };
 		F448F8381DDCC6D7000BC343 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		F448F8391DDCC6EB000BC343 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/Mac/OHHTTPStubs.framework; sourceTree = "<group>"; };
 		F448F83A1DDCC6EB000BC343 /* Polyline.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Polyline.framework; path = Carthage/Build/Mac/Polyline.framework; sourceTree = "<group>"; };
@@ -374,6 +395,7 @@
 			files = (
 				F448F83E1DDCC6FF000BC343 /* OHHTTPStubs.framework in Frameworks */,
 				F448F83F1DDCC701000BC343 /* Polyline.framework in Frameworks */,
+				3F706545292F33CD007E8974 /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +403,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F448F8311DDCC65C000BC343 /* Polyline.framework in Frameworks */,
+				3F706543292F33CD007E8974 /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F448F83D1DDCC6FA000BC343 /* Polyline.framework in Frameworks */,
+				3F706544292F33CD007E8974 /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +420,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F448F8341DDCC6C1000BC343 /* Polyline.framework in Frameworks */,
+				3F706542292F33CD007E8974 /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F448F8401DDCC709000BC343 /* Polyline.framework in Frameworks */,
+				3F706546292F33CD007E8974 /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +439,7 @@
 			files = (
 				F448F8411DDCC70C000BC343 /* OHHTTPStubs.framework in Frameworks */,
 				F448F8421DDCC70D000BC343 /* Polyline.framework in Frameworks */,
+				3F706547292F33CD007E8974 /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +449,8 @@
 			files = (
 				DADD27F71E5AC8E900D31FAD /* MapboxDirections.framework in Frameworks */,
 				DADD27F31E5ABD4300D31FAD /* Mapbox.framework in Frameworks */,
+				3F70653D292F33B0007E8974 /* Polyline.xcframework in Frameworks */,
+				3F706540292F33CD007E8974 /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +460,7 @@
 			files = (
 				DADD27E71E5AB02C00D31FAD /* MapboxDirections.framework in Frameworks */,
 				DADD27F41E5ABD6000D31FAD /* Mapbox.framework in Frameworks */,
+				3F706541292F33CD007E8974 /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA9E1B131E5A675F0081EDC7 /* Polyline.framework in Frameworks */,
+				3F706548292F33CD007E8974 /* Polyline.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,9 +479,9 @@
 		4025371970E36C6D8BF67116 /* iOS Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F70653F292F33CD007E8974 /* Polyline.xcframework */,
 				DADD27F21E5ABD4300D31FAD /* Mapbox.framework */,
 				F448F8381DDCC6D7000BC343 /* OHHTTPStubs.framework */,
-				F448F82A1DDCC5B6000BC343 /* Polyline.framework */,
 			);
 			name = "iOS Frameworks";
 			sourceTree = "<group>";
@@ -486,6 +515,7 @@
 		C5AD8656202E24F400BF47D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F70653C292F33B0007E8974 /* Polyline.xcframework */,
 				C5AD8657202E24F500BF47D5 /* 0E4ACB76-F60D-38A4-A651-CCFD819876A1.bcsymbolmap */,
 				C5AD8659202E24F500BF47D5 /* AWSCore.framework */,
 				C5AD8658202E24F500BF47D5 /* AWSPolly.framework */,
@@ -560,6 +590,8 @@
 				AEDC211820B5DBDE0052DED8 /* MBLaneIndicationComponent.swift */,
 				C56516831FE1A2DD00A0AD18 /* MBVisualInstructionType.swift */,
 				35EFD00A207DFACA00BF3873 /* MBVisualInstruction.swift */,
+				3F4A553629445E5200BA4CE9 /* MBRouteEvent.swift */,
+				3F4A553B2946CD1600BA4CE9 /* MBRouteEventLocation.swift */,
 			);
 			path = MapboxDirections;
 			sourceTree = "<group>";
@@ -988,6 +1020,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -1158,6 +1191,7 @@
 				C53A02261E92C26E009837BD /* MBAttribute.swift in Sources */,
 				DA1A10C91D00F969009F82FA /* MBRouteLeg.swift in Sources */,
 				C52552BA1FA15D5E00B1545C /* MBVisualInstructionBanner.swift in Sources */,
+				3F4A553D2946CD1600BA4CE9 /* MBRouteEventLocation.swift in Sources */,
 				C5DAAC9F20195AAE001F9261 /* MBTracepoint.swift in Sources */,
 				C5990B4A2045E72800D7DFD4 /* MBDirectionsResult.swift in Sources */,
 				35EFD00C207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */,
@@ -1166,6 +1200,7 @@
 				358D48871E2EAB4500F32A65 /* MBRouteOptions.m in Sources */,
 				DA1A10CC1D00F969009F82FA /* MBWaypoint.swift in Sources */,
 				DA1A10CA1D00F969009F82FA /* MBRouteOptions.swift in Sources */,
+				3F4A553829445E6300BA4CE9 /* MBRouteEvent.swift in Sources */,
 				DA1A10C81D00F969009F82FA /* MBRoute.swift in Sources */,
 				C5990B4D2045E74800D7DFD4 /* MBDirectionsOptions.swift in Sources */,
 				DAA76D691DD127CB0015EC78 /* MBLaneIndication.swift in Sources */,
@@ -1210,6 +1245,7 @@
 				C53A02271E92C26F009837BD /* MBAttribute.swift in Sources */,
 				DA1A10EF1D010247009F82FA /* MBRouteLeg.swift in Sources */,
 				C52552BB1FA15D5F00B1545C /* MBVisualInstructionBanner.swift in Sources */,
+				3F4A553E2946CD1600BA4CE9 /* MBRouteEventLocation.swift in Sources */,
 				C5DAACA020195AAF001F9261 /* MBTracepoint.swift in Sources */,
 				C5990B4B2045E72900D7DFD4 /* MBDirectionsResult.swift in Sources */,
 				35EFD00D207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */,
@@ -1218,6 +1254,7 @@
 				358D48881E2EAB4500F32A65 /* MBRouteOptions.m in Sources */,
 				DA1A10F21D010247009F82FA /* MBWaypoint.swift in Sources */,
 				DA1A10F01D010247009F82FA /* MBRouteOptions.swift in Sources */,
+				3F4A553929445E6400BA4CE9 /* MBRouteEvent.swift in Sources */,
 				DA1A10EE1D010247009F82FA /* MBRoute.swift in Sources */,
 				C5990B4E2045E74900D7DFD4 /* MBDirectionsOptions.swift in Sources */,
 				DAA76D6A1DD127CB0015EC78 /* MBLaneIndication.swift in Sources */,
@@ -1262,6 +1299,7 @@
 				C53A02281E92C271009837BD /* MBAttribute.swift in Sources */,
 				DA1A11061D0103A3009F82FA /* MBRouteLeg.swift in Sources */,
 				C52552BC1FA15D6000B1545C /* MBVisualInstructionBanner.swift in Sources */,
+				3F4A553F2946CD1600BA4CE9 /* MBRouteEventLocation.swift in Sources */,
 				C5DAACA120195AAF001F9261 /* MBTracepoint.swift in Sources */,
 				C5990B4C2045E72A00D7DFD4 /* MBDirectionsResult.swift in Sources */,
 				35EFD00E207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */,
@@ -1270,6 +1308,7 @@
 				358D48891E2EAB4500F32A65 /* MBRouteOptions.m in Sources */,
 				DA1A11091D0103A3009F82FA /* MBWaypoint.swift in Sources */,
 				DA1A11071D0103A3009F82FA /* MBRouteOptions.swift in Sources */,
+				3F4A553A29445E6500BA4CE9 /* MBRouteEvent.swift in Sources */,
 				DA1A11051D0103A3009F82FA /* MBRoute.swift in Sources */,
 				C5990B4F2045E74A00D7DFD4 /* MBDirectionsOptions.swift in Sources */,
 				DAA76D6B1DD127CB0015EC78 /* MBLaneIndication.swift in Sources */,
@@ -1296,6 +1335,7 @@
 				C582BA2E2073ED6300647DAA /* Array.swift in Sources */,
 				C52552B91FA15D5900B1545C /* MBVisualInstructionBanner.swift in Sources */,
 				C52552C01FA1628A00B1545C /* MBVisualInstructionComponent.swift in Sources */,
+				3F4A553C2946CD1600BA4CE9 /* MBRouteEventLocation.swift in Sources */,
 				C59426071F1EA6C400C8E59C /* MBRoadClasses.swift in Sources */,
 				358D48861E2EAB4500F32A65 /* MBRouteOptions.m in Sources */,
 				35EFD00B207DFACA00BF3873 /* MBVisualInstruction.swift in Sources */,
@@ -1304,6 +1344,7 @@
 				DAC05F181CFC075300FA0071 /* MBRoute.swift in Sources */,
 				C59094BF203B800300EB2417 /* MBDirectionsOptions.swift in Sources */,
 				C5434B8C200695A50069E887 /* MBMatchOptions.swift in Sources */,
+				3F4A553729445E5200BA4CE9 /* MBRouteEvent.swift in Sources */,
 				DAA76D681DD127CB0015EC78 /* MBLaneIndication.swift in Sources */,
 				C59094C1203DE6BC00EB2417 /* MBDirectionsResult.swift in Sources */,
 				DAC05F1A1CFC077C00FA0071 /* MBRouteLeg.swift in Sources */,
@@ -1404,7 +1445,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = MapboxDirections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirections;
 				PRODUCT_NAME = MapboxDirections;
 				SDKROOT = macosx;
@@ -1434,7 +1479,11 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = MapboxDirections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirections;
 				PRODUCT_NAME = MapboxDirections;
 				SDKROOT = macosx;
@@ -1458,7 +1507,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = MapboxDirectionsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirectionsTests;
 				PRODUCT_NAME = MapboxDirectionsTests;
 				SDKROOT = macosx;
@@ -1478,7 +1532,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = MapboxDirectionsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks $(PROJECT_DIR)/Carthage/Build/Mac";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirectionsTests;
 				PRODUCT_NAME = MapboxDirectionsTests;
 				SDKROOT = macosx;
@@ -1504,7 +1563,11 @@
 				);
 				INFOPLIST_FILE = MapboxDirections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirections;
 				PRODUCT_NAME = MapboxDirections;
 				SDKROOT = appletvos;
@@ -1534,7 +1597,11 @@
 				);
 				INFOPLIST_FILE = MapboxDirections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirections;
 				PRODUCT_NAME = MapboxDirections;
 				SDKROOT = appletvos;
@@ -1558,7 +1625,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
 				INFOPLIST_FILE = MapboxDirectionsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/tvOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirectionsTests;
 				PRODUCT_NAME = MapboxDirectionsTests;
 				SDKROOT = appletvos;
@@ -1577,7 +1649,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
 				INFOPLIST_FILE = MapboxDirectionsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks $(PROJECT_DIR)/Carthage/Build/tvOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirectionsTests;
 				PRODUCT_NAME = MapboxDirectionsTests;
 				SDKROOT = appletvos;
@@ -1605,7 +1682,11 @@
 				);
 				INFOPLIST_FILE = MapboxDirections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirections;
 				PRODUCT_NAME = MapboxDirections;
 				SDKROOT = watchos;
@@ -1636,7 +1717,11 @@
 				);
 				INFOPLIST_FILE = MapboxDirections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirections;
 				PRODUCT_NAME = MapboxDirections;
 				SDKROOT = watchos;
@@ -1668,7 +1753,11 @@
 				);
 				INFOPLIST_FILE = MapboxDirections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirections;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1696,7 +1785,11 @@
 				);
 				INFOPLIST_FILE = MapboxDirections/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirections;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1718,7 +1811,12 @@
 				);
 				INFOPLIST_FILE = MapboxDirectionsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirectionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
@@ -1736,7 +1834,12 @@
 				);
 				INFOPLIST_FILE = MapboxDirectionsTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/Carthage/Build/iOS @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.MapboxDirectionsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
@@ -1752,14 +1855,17 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CL9324PRQA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Directions Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Directions.Swift;
 				PRODUCT_MODULE_NAME = DirectionsExampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1776,14 +1882,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CL9324PRQA;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Directions Example/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Directions.Swift;
 				PRODUCT_MODULE_NAME = DirectionsExampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1806,7 +1915,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Directions Example/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Directions.ObjectiveC;
 				PRODUCT_MODULE_NAME = DirectionsExampleObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1826,7 +1938,10 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = "Directions Example/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.mapbox.Directions.ObjectiveC;
 				PRODUCT_MODULE_NAME = DirectionsExampleObjectiveC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1933,7 +2048,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;

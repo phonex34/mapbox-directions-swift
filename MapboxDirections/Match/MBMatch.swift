@@ -8,11 +8,11 @@ import Polyline
 @objc(MBMatch)
 open class Match: DirectionsResult {
     
-    init(matchOptions: MatchOptions, legs: [RouteLeg], tracepoints: [Tracepoint], distance: CLLocationDistance, expectedTravelTime: TimeInterval, coordinates: [CLLocationCoordinate2D]?, confidence: Float, speechLocale: Locale?, waypointIndices: IndexSet) {
+    init(matchOptions: MatchOptions, legs: [RouteLeg], tracepoints: [Tracepoint], distance: CLLocationDistance, expectedTravelTime: TimeInterval, coordinates: [CLLocationCoordinate2D]?, confidence: Float, speechLocale: Locale?, waypointIndices: IndexSet, routeEvents: [RouteEvent], json: [String: Any]?) {
         self.confidence = confidence
         self.tracepoints = tracepoints
         self.waypointIndices = waypointIndices
-        super.init(legs: legs, distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, speechLocale: speechLocale, options: matchOptions)
+        super.init(legs: legs, distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, speechLocale: speechLocale, options: matchOptions, routeEvents: routeEvents, json: json)
     }
     
     /**
@@ -42,7 +42,8 @@ open class Match: DirectionsResult {
             speechLocale = Locale(identifier: locale)
         }
         
-        self.init(matchOptions: matchOptions, legs: legs, tracepoints: tracepoints, distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, confidence: confidence, speechLocale: speechLocale, waypointIndices: waypointIndices)
+        let routeEvents = (json["events"] as? [JSONDictionary] ?? []).map { RouteEvent(json: $0) }
+        self.init(matchOptions: matchOptions, legs: legs, tracepoints: tracepoints, distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, confidence: confidence, speechLocale: speechLocale, waypointIndices: waypointIndices, routeEvents: routeEvents, json: json)
     }
     
     /**

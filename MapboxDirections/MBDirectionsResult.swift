@@ -8,13 +8,15 @@ import Polyline
 @objc(MBDirectionsResult)
 open class DirectionsResult: NSObject, NSSecureCoding {
     
-    @objc internal init(legs: [RouteLeg], distance: CLLocationDistance, expectedTravelTime: TimeInterval, coordinates: [CLLocationCoordinate2D]?, speechLocale: Locale?, options: DirectionsOptions) {
+    @objc internal init(legs: [RouteLeg], distance: CLLocationDistance, expectedTravelTime: TimeInterval, coordinates: [CLLocationCoordinate2D]?, speechLocale: Locale?, options: DirectionsOptions, routeEvents: [RouteEvent], json: [String: Any]?) {
         self.directionsOptions = options
         self.legs = legs
         self.distance = distance
         self.expectedTravelTime = expectedTravelTime
         self.coordinates = coordinates
         self.speechLocale = speechLocale
+        self.routeEvents = routeEvents
+        self.jsonInit = json
     }
         
     @objc public required init?(coder decoder: NSCoder) {
@@ -40,6 +42,8 @@ open class DirectionsResult: NSObject, NSSecureCoding {
         routeIdentifier = decoder.decodeObject(of: NSString.self, forKey: "routeIdentifier") as String?
         
         speechLocale = decoder.decodeObject(of: NSLocale.self, forKey: "speechLocale") as Locale?
+        
+        routeEvents = decoder.decodeObject(of: [NSArray.self, RouteEvent.self], forKey: "routeEvents") as? [RouteEvent] ?? []
     }
     
     public class var supportsSecureCoding: Bool {
@@ -59,6 +63,7 @@ open class DirectionsResult: NSObject, NSSecureCoding {
         coder.encode(directionsOptions, forKey: "directionsOptions")
         coder.encode(routeIdentifier, forKey: "routeIdentifier")
         coder.encode(speechLocale, forKey: "speechLocale")
+        coder.encode(routeEvents, forKey: "routeEvents")
     }
     
     /**
@@ -172,4 +177,8 @@ open class DirectionsResult: NSObject, NSSecureCoding {
      This locale is specific to Mapbox Voice API. If `nil` is returned, the instruction should be spoken with an alternative speech synthesizer.
      */
     @objc open var speechLocale: Locale?
+    
+    @objc public let routeEvents: [RouteEvent]
+    
+    @objc public var jsonInit: [String: Any]?
 }

@@ -9,8 +9,8 @@ import Polyline
 open class Route: DirectionsResult {
     // MARK: Creating a Route
     
-    @objc internal override init(legs: [RouteLeg], distance: CLLocationDistance, expectedTravelTime: TimeInterval, coordinates: [CLLocationCoordinate2D]?, speechLocale: Locale?, options: DirectionsOptions) {
-        super.init(legs: legs, distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, speechLocale: speechLocale, options: options)
+    @objc internal override init(legs: [RouteLeg], distance: CLLocationDistance, expectedTravelTime: TimeInterval, coordinates: [CLLocationCoordinate2D]?, speechLocale: Locale?, options: DirectionsOptions, routeEvents: [RouteEvent], json: [String: Any]?) {
+        super.init(legs: legs, distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, speechLocale: speechLocale, options: options, routeEvents: routeEvents, json: json)
     }
     
     /**
@@ -39,8 +39,9 @@ open class Route: DirectionsResult {
         if let locale = json["voiceLocale"] as? String {
             speechLocale = Locale(identifier: locale)
         }
-        
-        super.init(legs: legs, distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, speechLocale: speechLocale, options: options)
+       
+        let routeEvents = (json["events"] as? [JSONDictionary] ?? []).map { RouteEvent(json: $0) }
+        super.init(legs: legs, distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, speechLocale: speechLocale, options: options, routeEvents: routeEvents, json: json)
     }
     
     public var routeOptions: RouteOptions {
@@ -70,6 +71,7 @@ internal class RouteV4: Route {
             coordinates = nil
         }
         
-        self.init(legs: [leg], distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, speechLocale: nil, options: options)
+        let routeEvents = (json["events"] as? [JSONDictionary] ?? []).map { RouteEvent(json: $0) }
+        self.init(legs: [leg], distance: distance, expectedTravelTime: expectedTravelTime, coordinates: coordinates, speechLocale: nil, options: options, routeEvents: routeEvents, json: json)
     }
 }
